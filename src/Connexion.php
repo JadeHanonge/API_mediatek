@@ -9,19 +9,19 @@
 class Connexion {
 
     /**
-     * 
+     *
      * @var Connexion
      */
     private static $instance = null;
     /**
-     * 
+     *
      * @var \PDO
      */
     private $conn = null;
 
     /**
      * constructeur privé : connexion à la BDD
-     * @param string $login 
+     * @param string $login
      * @param string $pwd
      * @param string $bd
      * @param string $server
@@ -35,7 +35,7 @@ class Connexion {
             throw $e;
         }
     }
-    
+
     /**
      * méthode statique de création de l'instance unique
      * @param string $login

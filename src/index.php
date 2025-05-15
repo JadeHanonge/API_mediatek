@@ -27,4 +27,9 @@ if (!$url->authentification()){
     $champs = $url->recupVariable("champs", "json");
     // demande au controleur de traiter la demande
     $controle->demande($methodeHTTP, $table, $id, $champs);
+    var_dump($methodeHTTP);
+    var_dump($table);
+    var_dump($id);
+    var_dump($champs);
+
 }
